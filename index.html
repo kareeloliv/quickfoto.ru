@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Quickfoto.ru - Главная</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/logo.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/logo.svg">
+</head>
+
+<body>
+	<header class="header">
+
+    <input class="hamburger-icon__checkbox" type="checkbox" id="hamburger-icon__checkbox" />
+    <label class="header__hamburger hamburger-icon" for="hamburger-icon__checkbox">
+        <span class="hamburger-icon__line hamburger-icon__line_top"></span>
+        <span class="hamburger-icon__line hamburger-icon__line_center"></span>
+        <span class="hamburger-icon__line hamburger-icon__line_bottom"></span>
+    </label>
+
+    <div class="header__top top-header">
+        <nav class="top-header__container top-header__menu">
+            <ul class="top-header__menu-items">
+                <li class="top-header__menu-item"><a href="#">О нас</a></li>
+                <li class="top-header__menu-item"><a href="#stages">Доставка и оплата</a></li>
+                <li class="top-header__menu-item"><a href="#reviews">Отзывы</a></li>
+                <li class="top-header__menu-item"><a href="#stock">Акции</a></li>
+                <li class="top-header__menu-item"><a href="#map-block">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__main main-header">
+        <div class="main-header__container">
+            <a href="#" class="main-header__logo">
+                <img src="./img/logo.svg" alt="">
+                <div class="main-header__logo-info">
+                    <div class="main-header__logo-info_title">QuickFoto</div>
+                    <div class="main-header__logo-info_desc">Услуги фотопечати</div>
+                </div>
+            </a>
+            <div class="main-header__address">
+                <svg class="icon icon--location">
+                    <use href="./img/svgsprite/sprite.symbol.svg#location"></use>
+                </svg>
+                <p>
+                    г. Санкт-Петербург<br>
+                    Невский просп., 114 <br>
+                    <span>ежедневно с 9:00 до 21:00</span>
+                </p>
+            </div>
+            <div class="main-header__contacts">
+                <a href="tel:+79000000000" class="main-header__contacts_tel">
+                    <svg class="icon icon--phone">
+                        <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                    </svg>
+                    +7 (900) 000-00-00</a>
+                <a href="mailto:info@quickfoto.ru" class="main-header__contacts_email">
+                    <svg class="icon icon--message">
+                        <use href="./img/svgsprite/sprite.symbol.svg#message"></use>
+                    </svg>
+                    info@quickfoto.ru</a>
+            </div>
+            <a href="#" class="main-header__callback button button_line popup-form__trigger" data-fancybox data-src="#popup-form">Заказать звонок</a>
+        </div>
+    </div>
+    <div class="header__menu header-menu">
+        <nav class="header-menu__container">
+            <ul class="header-menu__items">
+                <li class="header-menu__item"><a href="#">Все услуги</a></li>
+                <li class="header-menu__item"><a href="#">Печать фото</a></li>
+                <li class="header-menu__item header-menu__item-parent">
+                    <a href="#">Фотокниги</a>
+                    <ul class="header-submenu header-submenu__items">
+                        <li class="header-submenu__item"><a href="#">Выпускные альбомы</a></li>
+                        <li class="header-submenu__item"><a href="#">В твердой обложке</a></li>
+                        <li class="header-submenu__item"><a href="#">В мягкой обложке</a></li>
+                        <li class="header-submenu__item"><a href="#">Минибук</a></li>
+                    </ul>
+                </li>
+                <li class="header-menu__item"><a href="#">Календари</a></li>
+                <li class="header-menu__item"><a href="#">Фотосувениры</a></li>
+                <li class="header-menu__item"><a href="#">Интерьерная печать</a></li>
+                <li class="header-menu__item header-menu__item-parent">
+                    <a href="#">Полиграфия</a>
+                    <ul class="header-submenu header-submenu__items">
+                        <li class="header-submenu__item"><a href="#">Брошюры</a></li>
+                        <li class="header-submenu__item"><a href="#">Визитки</a></li>
+                        <li class="header-submenu__item"><a href="#">Буклеты</a></li>
+                        <li class="header-submenu__item"><a href="#">Журналы</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+</header>
+	<main class="main-page">
+
+		<section class="main-page__first-screen first-screen">
+			<div class="first-screen__container">
+				<div class="first-screen__slider">
+
+					<div class="first-screen__slide slide-first-screen" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url('./img/first-screen__bg1.jpg');">
+						<div class="slide-first-screen__content slide-first-screen__content_column">
+
+							<div class="slide-first-screen__info">
+								<div class="slide-first-screen__subtitle">только до 30 сентября</div>
+								<div class="slide-first-screen__title">ПЕЧАТЬ ФОТО со скидкой 20%</div>
+								<a href="#" class="slide-first-screen__button button">Подробнее</a>
+							</div>
+							<form class="slide-first-screen__form first-form" method="post">
+								<div class="first-form__head">
+									<div class="first-form__head-title">Сделать заказ</div>
+									<span>Заполните форму и мы свяжемся с Вами для уточнения деталей заказа</span>
+								</div>
+								<div class="first-form__items">
+									<div class="first-form__item">
+										<label for="name">Имя</label>
+										<input type="name" name="name" placeholder="Иван Иванов" />
+									</div>
+									<div class="first-form__item">
+										<label for="tel">Телефон</label>
+										<input type="tel" name="tel" placeholder="+7 (900) 000-00-00" required />
+									</div>
+									<div class="first-form__item first-input-file">
+										<input name="file" type="file" name="file" id="first-input-file__file-2" class="first-input-file first-input-file__file" multiple accept=".jpg, .jpeg, .png">
+										<label class="first-input-file__file-wrapper" for="first-input-file__file-2">
+											<div class="first-input-file__file-fake">Выберите файлы</div>
+											<div class="first-input-file__file-button button">Выбрать</div>
+										</label>
+									</div>
+									<div class="first-form__policy">Нажимая кнопку, я принимаю <a href="#">соглашение о конфиденциальности</a></div>
+									<button type="submit" class="first-form__button button">Отправить</button>
+								</div>
+							</form>
+
+						</div>
+					</div>
+
+					<div class="first-screen__slide slide-first-screen">
+						<div class="slide-first-screen__content">
+							<picture>
+<source srcset="./img/first-screen__bg2.webp 1x" type="image/webp">
+<source srcset="./img/first-screen__bg2.jpg 1x" type="image/jpeg">
+<img class="slide-first-screen__background" src="./img/first-screen__bg2.jpg" alt="">
+</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__category category">
+			<div class="category__container">
+				<div class="category__items">
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3 title_h3"><a href="">Фотокниги</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Выпускные альбомы</a></li>
+								<li class="category__subcategory"><a href="#">В твердой обложке</a></li>
+								<li class="category__subcategory"><a href="#">В мягкой обложке</a></li>
+								<li class="category__subcategory"><a href="#">Минибук</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/collection.webp 1x" type="image/webp">
+<source srcset="./img/collection.jpg 1x" type="image/jpeg">
+<img src="./img/collection.jpg" alt="">
+</picture>
+						</div>
+					</div>
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3"><a href="">Печать фотографий</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Стандартные</a></li>
+								<li class="category__subcategory"><a href="#">Премиум</a></li>
+								<li class="category__subcategory"><a href="#">Фотографии с подписью</a></li>
+								<li class="category__subcategory"><a href="#">Фотографии Polaroid</a></li>
+								<li class="category__subcategory"><a href="#">Постеры</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/pech-foto.webp 1x" type="image/webp">
+<source srcset="./img/pech-foto.jpg 1x" type="image/jpeg">
+<img src="./img/pech-foto.jpg" alt="">
+</picture>
+						</div>
+					</div>
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3"><a href="">Интерьерная печать</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Постеры</a></li>
+								<li class="category__subcategory"><a href="#">Печать на холстах</a></li>
+								<li class="category__subcategory"><a href="#">На ПВХ</a></li>
+								<li class="category__subcategory"><a href="#">На дереве</a></li>
+								<li class="category__subcategory"><a href="#">На акриле</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/inter-pech.webp 1x" type="image/webp">
+<source srcset="./img/inter-pech.jpg 1x" type="image/jpeg">
+<img src="./img/inter-pech.jpg" alt="">
+</picture>
+						</div>
+					</div>
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3"><a href="">Фотосувениры</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Кружки</a></li>
+								<li class="category__subcategory"><a href="#">Магниты</a></li>
+								<li class="category__subcategory"><a href="#">Открытки</a></li>
+								<li class="category__subcategory"><a href="#">Для детей</a></li>
+								<li class="category__subcategory"><a href="#">Одежда и текстиль</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/fotosuveniry.webp 1x" type="image/webp">
+<source srcset="./img/fotosuveniry.jpg 1x" type="image/jpeg">
+<img src="./img/fotosuveniry.jpg" alt="">
+</picture>
+						</div>
+					</div>
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3"><a href="">Календари</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Календарь перекидной</a></li>
+								<li class="category__subcategory"><a href="#">Календарь плакат</a></li>
+								<li class="category__subcategory"><a href="#">Магнитный календарь</a></li>
+								<li class="category__subcategory"><a href="#">Настольный календарь</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/kalendary.webp 1x" type="image/webp">
+<source srcset="./img/kalendary.jpg 1x" type="image/jpeg">
+<img src="./img/kalendary.jpg" alt="">
+</picture>
+						</div>
+					</div>
+					<div class="category__item">
+						<div class="category__item-info">
+							<div class="category__name title_h3"><a href="">Полиграфия</a></div>
+							<ul class="category__list">
+								<li class="category__subcategory"><a href="#">Брошюры</a></li>
+								<li class="category__subcategory"><a href="#">Визитки</a></li>
+								<li class="category__subcategory"><a href="#">Буклеты</a></li>
+								<li class="category__subcategory"><a href="#">Журналы</a></li>
+							</ul>
+						</div>
+						<div class="category__item-img">
+							<picture>
+<source srcset="./img/polygr.webp 1x" type="image/webp">
+<source srcset="./img/polygr.jpg 1x" type="image/jpeg">
+<img src="./img/polygr.jpg" alt="">
+</picture>
+						</div>
+					</div>
+				</div>
+				<div class="category__button">
+					<a class="button" href="#">Смотреть все</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__stock stock">
+			<a name="stock"></a>
+			<div class="stock__container">
+				<div class="stock__column">
+					<div class="stock__info stock-info">
+						<div class="stock-info__title">скидка 20%</div>
+						<p class="stock-info__text">Оформи заказ на 50 000 руб. до конца августа и получи скидку 20% на весь заказ</p>
+						<picture>
+<source srcset="./img/stock.webp 1x" type="image/webp">
+<source srcset="./img/stock.png 1x" type="image/png">
+<img class="stock-info__img" src="./img/stock.png" alt="">
+</picture>
+					</div>
+					<div class="stock__advantages stock-advantages">
+						<div class="stock-advantages__item">
+							<div class="stock-advantages__title title_h3">На рынке с 1999 года</div>
+							<p class="stock-advantages__text">За это время мы выработали систему работы, благодаря которой более 90% клиентов становятся постоянными</p>
+						</div>
+						<div class="stock-advantages__item">
+							<div class="stock-advantages__title title_h3">Качество и сроки</div>
+							<p class="stock-advantages__text">Строго соблюдаем оговоренные сроки и следим за качеством на всех этапах работы</p>
+						</div>
+						<div class="stock-advantages__item">
+							<div class="stock-advantages__title title_h3">Индивидуальный подход</div>
+							<p class="stock-advantages__text">Разрабатываем упаковку в собственной дизайнерской лаборатории</p>
+						</div>
+						<div class="stock-advantages__item">
+							<div class="stock-advantages__title title_h3">Оплата</div>
+							<p class="stock-advantages__text">Предоставляем отсрочку по оплате</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__catalog catalog">
+			<div class="catalog__container">
+				<div class="catalog__title title_h2">Популярные заказы</div>
+				<div class="catalog__products-slider">
+					<div class="catalog__product-card product-card">
+						<a href="" class="product-card__image">
+							<picture>
+<source srcset="./img/pech-foto.webp 1x" type="image/webp">
+<source srcset="./img/pech-foto.jpg 1x" type="image/jpeg">
+<img src="./img/pech-foto.jpg" alt="">
+</picture>
+						</a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title title_h3">Фотографии стандартных форматов</a>
+							<div class="product-card__desc">Форматы: 10x15, 10x13,5;
+								Фотобумага Premium или Standart.</div>
+							<div class="product-card__action">
+								<div class="product-card__price">от 10 ₽</div>
+								<div class="product-card__cart order-form__trigger" data-fancybox data-src="#order-form">
+									<svg class="icon icon--arrow-right">
+										<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__product-card product-card">
+						<a href="" class="product-card__image">
+							<picture>
+<source srcset="./img/fotosuveniry.webp 1x" type="image/webp">
+<source srcset="./img/fotosuveniry.jpg 1x" type="image/jpeg">
+<img src="./img/fotosuveniry.jpg" alt="">
+</picture>
+						</a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title title_h3">Фотографии больших форматов</a>
+							<div class="product-card__desc">Любые форматы по вашему желанию. Фотобумага Premium или Standart.</div>
+							<div class="product-card__action">
+								<div class="product-card__price">от 100 ₽</div>
+								<div class="product-card__cart order-form__trigger" data-fancybox data-src="#order-form">
+									<svg class="icon icon--arrow-right">
+										<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__product-card product-card">
+						<a href="" class="product-card__image">
+							<picture>
+<source srcset="./img/collection.webp 1x" type="image/webp">
+<source srcset="./img/collection.jpg 1x" type="image/jpeg">
+<img src="./img/collection.jpg" alt="">
+</picture>
+						</a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title title_h3">Фотографии Polaroid</a>
+							<div class="product-card__desc">Прямо из любимых 90-х: фотографии с белой рамкой в стиле Polaroid</div>
+							<div class="product-card__action">
+								<div class="product-card__price">от 80 ₽</div>
+								<div class="product-card__cart order-form__trigger" data-fancybox data-src="#order-form">
+									<svg class="icon icon--arrow-right">
+										<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__product-card product-card">
+						<a href="" class="product-card__image">
+							<picture>
+<source srcset="./img/inter-pech.webp 1x" type="image/webp">
+<source srcset="./img/inter-pech.jpg 1x" type="image/jpeg">
+<img src="./img/inter-pech.jpg" alt="">
+</picture>
+						</a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title title_h3">Квадратные фотографии</a>
+							<div class="product-card__desc">Формат: 10x10 см;
+								Фотобумага Premium или Standart.</div>
+							<div class="product-card__action">
+								<div class="product-card__price">от 15 ₽</div>
+								<div class="product-card__cart order-form__trigger" data-fancybox data-src="#order-form">
+									<svg class="icon icon--arrow-right">
+										<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__product-card product-card">
+						<a href="" class="product-card__image">
+							<picture>
+<source srcset="./img/pech-foto.webp 1x" type="image/webp">
+<source srcset="./img/pech-foto.jpg 1x" type="image/jpeg">
+<img src="./img/pech-foto.jpg" alt="">
+</picture>
+						</a>
+						<div class="product-card__body">
+							<a href="#" class="product-card__title title_h3">Фотографии стандартных форматов</a>
+							<div class="product-card__desc">Форматы: 10x15, 10x13,5;
+								Фотобумага Premium или Standart.</div>
+							<div class="product-card__action">
+								<div class="product-card__price">от 10 ₽</div>
+								<div class="product-card__cart order-form__trigger" data-fancybox data-src="#order-form">
+									<svg class="icon icon--arrow-right">
+										<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__stages stages">
+			<a name="stages"></a>
+			<div class="stages__container">
+				<div class="stages__title title_h2">Как мы работаем?</div>
+				<div class="stages__items">
+					<div class="stages__item stages-item">
+						<div class="stages-item__title title_h3">Заявка или звонок</div>
+						<div class="stages-item__desc">Оставьте заявку с фотографиями и контактной информацией через форму на нашем сайте.</div>
+						<div class="stages-item__btn button order-form__trigger" data-fancybox data-src="#order-form">Оставить заявку</div>
+						<div class="stages-item__tel">Или позвоните нам, наш менеджер поможет вам с отправкой фотографий.<br>
+							<a href="tel:+79000000000">+7 (900) 000-00-00</a>
+						</div>
+						<div class="stages-item__num">1</div>
+					</div>
+					<div class="stages__item stages-item">
+						<div class="stages-item__title title_h3">Общение с менеджером</div>
+						<div class="stages-item__desc">После получения вашей заявки или звонка, менеджер свяжется с вами для уточнения всех деталей. Он обсудит с вами формат и материал для печати, количество копий, а также любые дополнительные пожелания и особенности заказа.</div>
+						<div class="stages-item__num">2</div>
+					</div>
+					<div class="stages__item stages-item">
+						<div class="stages-item__title title_h3">Подтверждение заказа</div>
+						<div class="stages-item__desc">Когда все детали согласованы, менеджер подготовит окончательное предложение. Вам останется только подтвердить заказ, согласовав условия оплаты и доставки. Этот этап является началом нашего сотрудничества.</div>
+						<div class="stages-item__num">3</div>
+					</div>
+					<div class="stages__item stages-item_img">
+						<picture>
+<source srcset="./img/stages.webp 1x" type="image/webp">
+<source srcset="./img/stages.jpg 1x" type="image/jpeg">
+<img src="./img/stages.jpg" alt="">
+</picture>
+					</div>
+					<div class="stages__item stages-item">
+						<div class="stages-item__title title_h3">Изготовление заказа</div>
+						<div class="stages-item__desc">После подтверждения заказа, наши специалисты приступают к его выполнению. Время изготовления зависит от сложности и объема заказа.</div>
+						<div class="stages-item__num">4</div>
+					</div>
+					<div class="stages__item stages-item">
+						<div class="stages-item__title title_h3">Доставка</div>
+						<div class="stages-item__desc">Мы предлагаем несколько вариантов доставки:
+							<ul>
+								<li>курьерская служба</li>
+								<li>почтовая отправка</li>
+								<li>самовывоз из нашего офиса</li>
+							</ul> Наш менеджер заранее уведомит вас о сроках и деталях доставки.
+						</div>
+						<div class="stages-item__num">5</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__reviews reviews">
+			<a name="reviews"></a>
+			<div class="reviews__container">
+				<div class="reviews__column">
+					<div class="reviews__info reviews-info">
+						<div class="reviews-info__title title_h2">Cредняя оценка</div>
+						<div class="reviews-info__rating">
+							4.9
+							<div class="reviews-info__rating-stars">★★★★★</div>
+						</div>
+						<p>Общий рейтинг в Яндексе на основе отзывов покупателей</p>
+						<a class="button" href="#">Оставить отзыв</a>
+					</div>
+					<div class="reviews__reviews">
+						<div class="reviews__slider">
+							<div class="reviews__review review">
+								<div class="review__top"><span>Лиана</span>, 25 июля 2023</div>
+								<div class="review__stars">★★★★★</div>
+								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+							</div>
+							<div class="reviews__review review">
+								<div class="review__top"><span>Имя</span>, 25 июля 2023</div>
+								<div class="review__stars">★★★★★</div>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure.</p>
+							</div>
+							<div class="reviews__review review">
+								<div class="review__top"><span>Андрей</span>, 25 июля 2023</div>
+								<div class="review__stars">★★★★★</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+							</div>
+							<div class="reviews__review review">
+								<div class="review__top"><span>Имя</span>, 25 июля 2023</div>
+								<div class="review__stars">★★★★★</div>
+								<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual.</p>
+							</div>
+							<div class="reviews__review review">
+								<div class="review__top"><span>Фамилия</span>, 25 июля 2023</div>
+								<div class="review__stars">★★★★★</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<a href="#" class="reviews__link">
+							<svg class="icon icon--arrow-right">
+								<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+							</svg>
+							Читать все отзывы или оставить свой </a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-page__callback callback">
+			<div class="callback__container">
+				<div class="callback__title title_h2">Остались вопросы? Мы вам перезвоним!</div>
+				<div class="callback__subtitle">Просто оставьте заявку на сайте, и мы свяжемся с вами в ближайшее время</div>
+
+				<form class="callback__form bottom-form" action="" method="post" name="form20">
+					<div class="bottom-form__item">
+						<input type="text" name="name" placeholder="Ваше имя" />
+					</div>
+					<div class="bottom-form__item">
+						<input type="tel" name="tel" placeholder="+7 (___) ___-__-__" />
+					</div>
+					<div class="bottom-form__item">
+						<input type="email" name="email" placeholder="Ваш E-mail" />
+					</div>
+					<button class="bottom-form__button" type="submit">Отправить
+						<svg class="icon icon--arrow-right">
+							<use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="callback__text">Нажимая на кнопку, вы даете свое <a href="#">согласие на обработку персональных данных</a></div>
+			</div>
+		</section>
+
+		<section class="main-page__map map-block">
+			<a name="map-block"></a>
+			<div class="map-block__container">
+
+				<div class="map-block__contacts contacts">
+					<div class="contacts__title title_h2">Мы находимся в Санкт-Петербурге</div>
+
+					<div class="contacts__items">
+
+						<div class="contacts__item">
+							<svg class="icon icon--location">
+								<use href="./img/svgsprite/sprite.symbol.svg#location"></use>
+							</svg>
+							<div class="contacts__item-info">
+								Адрес:<br><span>г. Санкт-Петербург, Невский просп., 114</span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<svg class="icon icon--clock">
+								<use href="./img/svgsprite/sprite.symbol.svg#clock"></use>
+							</svg>
+							<div class="contacts__item-info">
+								Режим работы:<br><span>ежедневно с 9:00 до 21:00</span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<svg class="icon icon--phone">
+								<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+							</svg>
+							<div class="contacts__item-info">
+								Телефон:<br><span><a href="tel:+79000000000">+7 (900) 000-00-00</a></span>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<svg class="icon icon--message">
+								<use href="./img/svgsprite/sprite.symbol.svg#message"></use>
+							</svg>
+							<div class="contacts__item-info">
+								Почта:<br><span><a href="mailto:info@quickfoto.ru">info@quickfoto.ru</a></span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<iframe class="map-block__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1ce411d14c86cd4671bf6ddc67ef046d7c10b6b745623a4487b368d4252a772&amp;source=constructor" frameborder="0"></iframe>
+		</section>
+
+
+	</main>
+	<form class="popup-form" method="post" id="popup-form">
+    <div class="popup-form__head">
+        <div class="popup-form__head-title title_h3">Заказать звонок</div>
+        <span>Заполните форму и мы свяжемся с Вами в течение 15 минут</span>
+    </div>
+    <div class="popup-form__items">
+        <div class="popup-form__item">
+            <label for="name">Имя</label>
+            <input type="name" name="name" placeholder="Ваше имя" />
+        </div>
+        <div class="popup-form__item">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" placeholder="+7 (900) 000-00-00" />
+        </div>
+        <div class="popup-form__item">
+            <label for="textarea">Комментарий</label>
+            <textarea name="textarea" rows="1" placeholder=""></textarea>
+        </div>
+        <div class="popup-form__policy">Нажимая кнопку, я принимаю <a href="#">соглашение о конфиденциальности</a></div>
+        <button type="submit" class="popup-form__button button">Отправить</button>
+    </div>
+</form>
+	<form class="order-form" method="post" id="order-form">
+    <div class="order-form__head">
+        <div class="order-form__head-title title_h3">Сделать заказ</div>
+        <span>Заполните форму и мы свяжемся с Вами для уточнения деталей заказа</span>
+    </div>
+    <div class="order-form__items">
+        <div class="order-form__item">
+            <label for="name">Имя</label>
+            <input type="name" name="name" placeholder="Ваше имя" />
+        </div>
+        <div class="order-form__item">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" placeholder="+7 (900) 000-00-00" required />
+        </div>
+        <div class="order-form__item">
+            <label for="textarea">Комментарий</label>
+            <textarea name="textarea" rows="1" placeholder=""></textarea>
+        </div>
+
+        <div class="order-form__item input-file">
+            <input name="file" type="file" name="file" id="input-file__file-2" class="input-file input-file__file" multiple accept=".jpg, .jpeg, .png">
+            <label class="input-file__file-wrapper" for="input-file__file-2">
+                <div class="input-file__file-fake">Выберите файлы для печати</div>
+                <div class="input-file__file-button button">Выбрать</div>
+            </label>
+        </div>
+
+        <div class="order-form__policy">Нажимая кнопку, я принимаю <a href="#">соглашение о конфиденциальности</a></div>
+        <button type="submit" class="order-form__button button">Отправить</button>
+    </div>
+</form>
+	<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__main footer-main">
+            <div class="footer-main__column footer-main__column-logo">
+                <div class="footer-main__logo">
+                    <img src="./img/logo.svg" alt="">
+                    <div class="footer-main__logo-info">
+                        <div class="footer-main__logo-info_title">QuickFoto</div>
+                        <div class="footer-main__logo-info_desc">Услуги фотопечати</div>
+                    </div>
+                </div>
+                <div class="footer-main__badge">
+                    <picture>
+<source srcset="./img/badge.webp 1x" type="image/webp">
+<source srcset="./img/badge.png 1x" type="image/png">
+<img src="./img/badge.png" alt="">
+</picture>
+                    <p class="footer-main__badge-text"><a href="#">Оставьте отзыв</a> на Яндекс.Картах и получите скидку</p>
+                </div>
+            </div>
+            <div class="footer-main__column footer-main__services">
+                <div class="footer-main__title">Услуги</div>
+                <ul class="footer-main__services-links">
+                    <li><a href="#">Все услуги</a></li>
+                    <li><a href="#">Печать фото</a></li>
+                    <li><a href="#">Фотокниги</a></li>
+                    <li><a href="#">Календари</a></li>
+                    <li><a href="#">Фотосувениры</a></li>
+                    <li><a href="#">Интерьерная печать</a></li>
+                    <li><a href="#">Типография</a></li>
+                </ul>
+            </div>
+            <div class="footer-main__column footer-main__menu">
+                <div class="footer-main__title">Информация</div>
+                <ul class="footer-main__menu-links">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#stages">Доставка и оплата</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#stock">Акции</a></li>
+                    <li><a href="#map-block">Контакты</a></li>
+                    <li><a href="#">Политика конфидициальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-main__column footer-main__contacts">
+                <div class="footer-main__title">Контакты</div>
+                <div class="footer-main__contact">
+                    <a href="tel:+79000000000">+7 (900) 000-00-00</a><br>
+                    <div class="popup-form__trigger" data-fancybox data-src="#popup-form">Заказать звонок</div>
+                </div>
+                <div class="footer-main__contact">
+                    г. Санкт-Петербург<br>
+                    Невский просп., 114<br>
+                    <span>ежедневно с 9:00 до 21:00</span>
+                </div>
+                <div class="footer-main__contact">
+                    <a href="mailto:info@quickfoto.ru">info@quickfoto.ru</a>
+                </div>
+                <div class="footer-main__social-links">
+                    <img src="./img/svgicons/VK.svg" alt="">
+                    <img src="./img/svgicons/Telegram.svg" alt="">
+                    <img src="./img/svgicons/WhatsApp.svg" alt="">
+                    <img src="./img/svgicons/Viber.svg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer__copyright footer-copyright">
+            <p>QuickFoto © 2015 - 2024</p>
+            <p>Все материалы, размещенные на сайте, носят справочный характер и не являются публичной офертой</p>
+            <p>Сайт разработан <a href="https://t.me/kareeloliv" target="_blank" rel="nofollow">kareeloliv</a></p>
+
+        </div>
+    </div>
+</footer>
+
+	<script src="./js/index.min.js"></script>
+</body>
+
+</html>
